@@ -35,7 +35,7 @@ class OnnxFrontend(
   val opsetVersion = modelProto.opsetImport(0).version.get
 
   val MinOpsetVersion = 9
-  val MaxOpsetVersion = 10
+  val MaxOpsetVersion = 13
 
   if (opsetVersion < MinOpsetVersion || opsetVersion > MaxOpsetVersion)
     throw new CompilerException(
